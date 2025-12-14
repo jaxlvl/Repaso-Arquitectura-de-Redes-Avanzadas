@@ -2,14 +2,6 @@
 
 Aplicación web interactiva para practicar con las preguntas de los Wooclaps de la asignatura ARA.
 
-## 🎯 Características
-
-- ✅ **12 temas diferentes** organizados en 2 bloques (IPv6 y SDN/NFV/CDN)
-- ✅ **66 preguntas totales** extraídas de los Wooclaps oficiales
-- ✅ **Modo aleatorio** que mezcla todas las preguntas
-- ✅ **Resultados detallados** con tu puntuación
-- ✅ **Revisión de errores** mostrando tu respuesta vs la correcta
-- ✅ **Interfaz moderna** con barra de progreso y diseño responsive
 
 ## 🚀 Cómo usar
 
