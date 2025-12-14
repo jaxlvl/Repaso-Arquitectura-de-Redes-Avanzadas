@@ -1,0 +1,734 @@
+{
+  "Autoevaluacion-semana": {
+    "filename": "KXUBBE_Autoevaluacion-semana_5-MIPv6-questions.xlsx",
+    "category": "Bloque I",
+    "questions": [
+      {
+        "type": "MCQ",
+        "title": "En el return routability test es CIERTO que:",
+        "correct": 1,
+        "choices": [
+          "El mensaje Home Test Init se envía por el túnel desde el MN al HA y el Care-of Test Init directamente al CN",
+          "El mensaje Home Test Init se envía por el túnel entre el MN y el HA y el Care-of Test Init se envía también tunelado al CN",
+          "El mensaje Home Test Init se envía por el túnel entre el MN y el CN y el Care-of Test Init directamente al HA"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Qué  mensajes sirven para enviar el home keygen token y el care-of keygen token en el proceso de return routability?",
+        "correct": 3,
+        "choices": [
+          "El Home Test Init lleva el home keygen token y el Care-of Test Init el care-of keygen token",
+          "El Home Test  lleva el home keygen token y el care-of keygen token",
+          "El Home Test lleva el home keygen token y el Care-of Test el care-of keygen token"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Cómo se genera la Kbm y para qué sirve?",
+        "correct": 1,
+        "choices": [
+          "Se genera uniendo los dos (home and care-of keygen tokens) y se utiliza para generar un HMAC que protege los BU entre MN y CN",
+          "Se genera uniendo los dos (home and care-of keygen tokens) y se utiliza para generar establecer una IPsec SA que protege los BU entre MN y HA",
+          "Se genera uniendo los dos (home and care-of keygen tokens) y se utiliza para para generar un HMAC que protege los BU entre MN y HA"
+        ]
+      }
+    ]
+  },
+  "Autoevaluacion-IPv6-semana2-questions": {
+    "filename": "MMHDXH_Autoevaluacion-IPv6-semana2-questions.xlsx",
+    "category": "Bloque I",
+    "questions": [
+      {
+        "type": "MCQ",
+        "title": "La cabecera de un paquete IPv6",
+        "correct": 1,
+        "choices": [
+          "Tiene un tamaño fijo de 40 bytes.",
+          "Tiene un tamaño fijo de 60 bytes",
+          "Tiene un tamaño variable sin tener en cuenta las cabeceras de extensión."
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Cuál consideras que es la razón más importante para el desarrollo e implantación de lPv6?",
+        "correct": 1,
+        "choices": [
+          "La falta de dirección IPv4",
+          "La eliminación de los NAT",
+          "La simplificación en el proceso de enrutamiento de los routers en Internet"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "Las cabeceras de extensión en IPv6:",
+        "correct": 1,
+        "choices": [
+          "Tienen un orden establecido",
+          "Se procesan en el origen y el destino de la comunicación",
+          "Únicamente la cabecera Destination Option se procesa en el destino de la comunicación."
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "En IPv6 la fragmentación se produce:",
+        "correct": 3,
+        "choices": [
+          "En cada salto, donde los routers entre el origen y el destino. procesan la cabecera Fragment Header.",
+          "En cada salto (router) y en el origen y el destino del tráfico procesan la cabecera Fragment Header",
+          "Los routers no procesan la cabecera Fragment Header"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "En la cabecera IPv6 aparece el campo Flow Label",
+        "correct": 1,
+        "choices": [
+          "Sirve para relacionar paquetes que están en el mismo flujo",
+          "Sirve para identificar el tipo de tráfico",
+          "Si tiene valor 0 indica que se trata del flujo de paquetes identificados por ese número"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Qué tipo de direcciones puedes encontrar en IPv6?",
+        "correct": 3,
+        "choices": [
+          "Unicast, Multicast, Broadcast",
+          "Unicast y Multicast",
+          "Unicast, Multicast y  Anycast"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Qué ambitos de direcciones maneja IPv6?",
+        "correct": 1,
+        "choices": [
+          "link-local, site-local, global",
+          "link-local, global",
+          "link-local, global, multicast"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "En EUI-64, un equipo con dirección MAC 00:00:00:00:00:01 y con un prefijo global 2001::/64 tendría la IPv6:",
+        "correct": 3,
+        "choices": [
+          "2001::0000:00FF:FE00:0001",
+          "2001::1",
+          "2001::0200:00FF:FE00:0001"
+        ]
+      }
+    ]
+  },
+  "Autoevaluacion-IPv6-MIPv6-semana4-questions": {
+    "filename": "UPUPPD_Autoevaluacion-IPv6-MIPv6-semana4-questions.xlsx",
+    "category": "Bloque I",
+    "questions": [
+      {
+        "type": "MCQ",
+        "title": "¿Es posible en una misma LAN que los routers estén enviando router advertisements pero que se utilice autconfiguración stateful (DHCPv6)?",
+        "correct": 2,
+        "choices": [
+          "No, no es posible. Si se utiliza DHCPv6 el envío de RAs carece de sentido.",
+          "Sí, de hecho el RA enviado puede indicar que no se va a utilizar autoconfiguración stateless y que se emplee DHCPv6.",
+          "Sí, de hecho el RA enviado puede indicar que se pueden utilizar los dos mecanismos de autoconfiguración tanto stateless como stateful."
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "El valor de router lifetime en un RA indica:",
+        "correct": 3,
+        "choices": [
+          "Tiempo en msec que consideramos un nodo como vecino, tras una confirmación de alcanzabilidad (recepción de un neighbour adverstisement de ese host)",
+          "La cantidad de tiempo en milisegundos que un host debería esperar antes de retransmitir un Neighbor Solicitation.",
+          "Tiempo en segundos durante el que puede los nodos pueden usar a este router como default"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Qué pasaría si una dirección IPv6 global en una interfaz que se configuró a través de un RA alcanza el tiempo de valid lifetime?",
+        "correct": 1,
+        "choices": [
+          "Se elimina de la interfaz",
+          "La dirección IPv6 es todavía válida de manera momentánea hasta alcanzar el preferred lifetime,  tras el cual será eliminada de la interfaz.",
+          "Tanto preferred lifetime y valid lifetime  son equivalentes, así que pasará lo mismo en ambos casos."
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "Si tuvieras que conectar dos redes IPv6 a través de una red IPv4 necesitarías:",
+        "correct": 3,
+        "choices": [
+          "Hosts dual stack , routers dual-stack y un túnel para encapsular IPv6 sobre IPv4 entre los dos routers.",
+          "Hosts dual stack y un túnel para encapsular IPv6 sobre IPv4 entre los dos routers frontera de la redes IPv6.",
+          "Host IPv6 nativos, routers dual-stack y un túnel para encapsular IPv6 sobre IPv4 entre los dos routers."
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Qué entidades forman la arquitectura de Mobile IPv6?",
+        "correct": 1,
+        "choices": [
+          "Home Agent, Mobile Node y Correspondant Node",
+          "Home Agent, Foreign Agent y Mobile Node",
+          "Home Agent y Mobile Node"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Cómo se llama la dirección de entrega en Mobile IPv6?",
+        "correct": 1,
+        "choices": [
+          "Care-of Address (CoA)",
+          "Homa Address (HoA)",
+          "Anycast address"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "Las fases de operación de Mobile IPv6 son",
+        "correct": 1,
+        "choices": [
+          "Descubrimiento, Registro y tunneling",
+          "Descubrimiento y registro",
+          "Descubrimiento y tunneling"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Qué mensaje o mensajes se utilizan para realizar la operación de registro?",
+        "correct": 3,
+        "choices": [
+          "Binding Update y Router Advertisement",
+          "Binding Ack y Router Solicitation",
+          "Binding Update y Binding Ack"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "Para el tráfico que va desde el CN al MN sin triangle routing, ¿qué cabecera se utiliza?",
+        "correct": 1,
+        "choices": [
+          "Una routing header con un único salto a la HoA",
+          "Una destination option que contiene indica la HoA",
+          "Una hop-by-hop option que contiene indica la HoA"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "Para el tráfico que va desde el MN al CN sin triangle routing, ¿qué cabecera se utiliza?",
+        "correct": 2,
+        "choices": [
+          "Una routing header con salto 1 a la HoA",
+          "Una destination option que contiene la HoA",
+          "Una hop-by-hop option que contiene la HoA"
+        ]
+      }
+    ]
+  },
+  "Autoevaluacion-IPv6-semana": {
+    "filename": "ZOUKXG_Autoevaluacion-IPv6-semana_3-ND-autoconf-questions.xlsx",
+    "category": "Bloque I",
+    "questions": [
+      {
+        "type": "MCQ",
+        "title": "Para un sistema de Duplicate Address Detection",
+        "correct": 3,
+        "choices": [
+          "Es necesario que el host que lanza el mecanismo envíe un Neighbor Solicitation con la dirección IPv6 que del otro host que intenta descubrir.",
+          "Es necesario que el router envíe un Router Adverstisement",
+          "Es necesario que el host que lanza el mecanismo envíe un Neighbor Solicitation con la dirección IPv6 que intenta asignarse."
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Qué tipo de dirección IPv6 fuente utilizará un router para enviar un Router Advertisement?",
+        "correct": 1,
+        "choices": [
+          "link-local IPv6 address",
+          "multicast IPv6 address",
+          "global IPv6 address"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "En IPv6, la funcionalidad de ARP vista en IPv4",
+        "correct": 2,
+        "choices": [
+          "Se sigue utilizando ARP en IPv6",
+          "También es necesaria pero ha sido sustituida con ICMPv6 a través de los mensajes Neighbour Solicitation y Neighbour Advertisement",
+          "También es necesaria pero ha sido sustituida con ICMPv6 a través de los mensajes Router Solicitation y Router Advertisement"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Qué mensaje emplea un host para poder saber qué prefijo de red utilizar para configurar una dirección global IPv6?",
+        "correct": 1,
+        "choices": [
+          "Emplea un router advertisement recibido para configurar una dirección global IPv6 usando información del prefijo de red enviado en ese mensaje.",
+          "Emplea un neighbour advertisement recibido para configurar una dirección global IPv6 usando información del prefijo de red enviado en ese mensaje.",
+          "Emplea un router advertisement recibido para configurar una dirección link-local IPv6 usando información del prefijo de red enviado en ese mensaje."
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "A la hora de configurar una link-local IPv6 address",
+        "correct": 3,
+        "choices": [
+          "El administrador de red tiene que asignarla a cada equipo",
+          "Un host puede configurarla de manera autónoma sin preguntar a nadie.",
+          "Un host puede configurarla de manera autónoma utilizando previamente DAD para detectar la posible duplicación de la dirección"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "Si un host quiere enviar un paquete a otro host en la LAN que tiene la dirección 2001::2/64 cuál será la solicited node multicast address utilizada en un neighbour solicitation",
+        "correct": 1,
+        "choices": [
+          "FF02::0001:FF00:0002",
+          "FF02::0001::0002",
+          "FF02::0002"
+        ]
+      }
+    ]
+  },
+  "Autoevaluacion-BloqueII-tema1-parte1-semana6-questions": {
+    "filename": "AZQKST_Autoevaluacion-BloqueII-tema1-parte1-semana6-questions.xlsx",
+    "category": "Bloque II",
+    "questions": [
+      {
+        "type": "MCQ",
+        "title": "La visión de Internet ahora se debe considerar",
+        "correct": 2,
+        "choices": [
+          "Extremo a extremo",
+          "Entre un origen del tráfico y el destino, puede actuar múltiples funcionalidades adicionales de red , denominadas middleboxes (NAT, SLB, Firewalls)",
+          "Además de ser extremo a extremo es jerárquica"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Qué es lo que hace un SLB stateful con llega una conexión TCP nueva?",
+        "correct": 1,
+        "choices": [
+          "Anota la conexión es una tabla de conexiones activas y apunta a qué servidor se ha balanceado",
+          "Aplica un hash a la dirección IP fuente. Dependiendo del resultado balancea a un servidor u otro",
+          "Anota la conexión es una tabla de conexiones activas y aplica un hash buckets para mejorar la eficiencia"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Qué pasa si un balanceador stateless utiliza una función hash que incluya el número de servidores n?",
+        "correct": 3,
+        "choices": [
+          "Pues no pasaría nada porque se balancearían las conexiones a otro servidor",
+          "Pues que si se cae un servidor se ven afectadas las conexiones de únicamente los clientes que estaban conectados a ese servidor.",
+          "Pues que si se cae un servidor se ven afectadas las conexiones de los clientes que estaban conectados y las del resto de clientes también"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Qué puede ser clasificado como un mecanismo de health check a nivel de aplicación para el servicio Web?",
+        "correct": 1,
+        "choices": [
+          "Establecer un intercambio HTTP request/response",
+          "Establecer una conexión TCP al puerto 80",
+          "Hacer un ping a la VIP"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Qué algoritmo de balanceo considera las prestaciones diferentes de los servidores?",
+        "correct": 3,
+        "choices": [
+          "Round Robin",
+          "Least connections",
+          "Weighted distribution"
+        ]
+      }
+    ]
+  },
+  "Autoevaluacion-SDN-2024-2025-questions": {
+    "filename": "BJPLUX_Autoevaluacion-SDN-2024-2025-questions.xlsx",
+    "category": "Bloque II",
+    "questions": [
+      {
+        "type": "MCQ",
+        "title": "¿En cuantos planos está dividido el modelo SDN?",
+        "correct": 3,
+        "choices": [
+          "En 2: control plan y data plane",
+          "En 3: application plane, control plane, data plane y SDNi",
+          "En 3: application plane , control plane y data plane"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "Acerca de los planos de networking",
+        "correct": 1,
+        "choices": [
+          "El plano de datos es el encargado de realizar el forwarding de paquetes y el plano de control de la gestión de rutas y políticas",
+          "El plano de control es el encargado de realizar la fragmentación- reensamblado de paquetes y el plano de datos de la gestión de rutas",
+          "El plano de control es el encargado de realizar el forwarding de paquetes y el plano de datos de la fragmentación/reensamblado de paquetes"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Cuál de las siguientes labores no corresponden a un controlador SDN?",
+        "correct": 1,
+        "choices": [
+          "Hacer un forwarding de paquetes entrantes al puerto apropiado basado en la información de una tabla de flujos.",
+          "Define los flujos de datos que ocurrirán en el plano de datos",
+          "Dar permiso a cada flujo que intenta pasar a través de la red."
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "Las SDNs pueden ser automatizadas con herramientas de orquestación utilizando uno de estos interfaces:",
+        "correct": 1,
+        "choices": [
+          "Northbound API",
+          "Southbound API",
+          "SDNi (east-west interface)"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "Ante la caída de un controlador",
+        "correct": 3,
+        "choices": [
+          "No pasaría nada porque los switches puede entonces intercambiar información para reconstruir la red",
+          "Se produciría un interrupción inmediata de la red",
+          "Al cabo de un período de tiempo la red dejaría de ser operativa"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Qué solución le darías en caso de caída de un controlador?",
+        "correct": 3,
+        "choices": [
+          "Utilizaría un balanceador de carga y pondría varios controladores",
+          "Utilizaría VRRP para tener controladores primarios y secundarios",
+          "Las dos alternativas serían solución al problema"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Cuál es uno de los usos del  interfaz SDNi (también llamado east-west interface)",
+        "correct": 2,
+        "choices": [
+          "Configurar un switch que se encuentra en un dominio diferente a donde está el controlador SDN",
+          "Intercambiar información de alcanzabilidad para facilitar el routing entre controladores SDNs",
+          "Ninguna de las anteriores es cierta"
+        ]
+      }
+    ]
+  },
+  "Autoevaluacion-SDN-Openflow": {
+    "filename": "CPXPGK_Autoevaluacion-SDN-Openflow_2024-2025-questions.xlsx",
+    "category": "Bloque II",
+    "questions": [
+      {
+        "type": "MCQ",
+        "title": "Un protocolo southbound es Openflow, ¿cuál de las siguientes opciones es válida",
+        "correct": 2,
+        "choices": [
+          "Openflow necesita IPsec para proteger los intercambios entre el controlador y los nodos de red.",
+          "Openflow necesita TLS para proteger los intercambios entre el controlador y los nodos de red.",
+          "Openflow ya protege los paquetes a nivel de aplicación."
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Qué tipos de tabla podemos encontrar en Openflow?",
+        "correct": 2,
+        "choices": [
+          "Flow table, Group Table, Controller table",
+          "Flow table, Group Table, Meter table",
+          "Flow table, Group Table"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Cuál de las siguientes opciones NO está contenida en una entrada de una tabla de flujos Openflow?",
+        "correct": 3,
+        "choices": [
+          "TCP Source and Destination Ports",
+          "Ingress Port",
+          "Output Port"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Qué tipos de mensajes puedes encontrar en Openflow?",
+        "correct": 1,
+        "choices": [
+          "Controller-to-Switch, Symmetric, Asynchronous",
+          "Controller-to-Switch, Symmetric, Asymmetric",
+          "Controller-to-Switch, Symmetric, Asynchronous, Controller-to-controller"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Cuál es la opción que NO representa una Action en una entrada Openflow?",
+        "correct": 3,
+        "choices": [
+          "Output",
+          "Change-TTL",
+          "Ingress"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Qué mensaje se recibe en el controlador cuando un switch no sabe qué hacer con un paquete?",
+        "correct": 1,
+        "choices": [
+          "Packet-in",
+          "Modify-State",
+          "Flow-Removed"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Qué mensaje envía el controlador para llevar el paquete a un puerto concreto?",
+        "correct": 1,
+        "choices": [
+          "Packet-out",
+          "Port-Status",
+          "Read-State"
+        ]
+      }
+    ]
+  },
+  "Autoevaluacion-bloqueII-tema1-implementacion-SLB-2024-2025-questions": {
+    "filename": "DGSLNK_Autoevaluacion-bloqueII-tema1-implementacion-SLB-2024-2025-questions.xlsx",
+    "category": "Bloque II",
+    "questions": [
+      {
+        "type": "MCQ",
+        "title": "En qué modo se necesita una dirección en una interfaz de loopback para que funcione\n(p.ej. ifconfig lo0:0 141.149.65.3 netmask 255.255.255.0 up)",
+        "correct": 1,
+        "choices": [
+          "Modo DSR",
+          "Modo bridge",
+          "Modo router"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿En qué modo es posible una configuración one-arm?",
+        "correct": 2,
+        "choices": [
+          "Modo bridge",
+          "Modo router",
+          "No existe esa configuración"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "Si se quiere utilizar delayed binding para balancear según datos de aplicación, ¿qué implementación de SLB no es posible?",
+        "correct": 2,
+        "choices": [
+          "Modo router one-arm",
+          "Modo DSR",
+          "Modo router"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "En VRRP , ¿cómo sabe el router secundario que el primario ha caído?",
+        "correct": 3,
+        "choices": [
+          "Porque el secundario envía pings de forma periódica al maestro para ver si está disponible.",
+          "Porque el secundario está en el mismo enlace que el primario y puede observar que el tráfico ya no fluye por el primario",
+          "Porque el secundario deja de escuchar mensajes de adverstisement del primario."
+        ]
+      }
+    ]
+  },
+  "Autoevaluacion-CDNs-2024-2025-questions": {
+    "filename": "EHOLQH_Autoevaluacion-CDNs-2024-2025-questions.xlsx",
+    "category": "Bloque II",
+    "questions": [
+      {
+        "type": "MCQ",
+        "title": "Para el balanceo entre cachés que ¿tipo de algoritmo de balanceo te interesa más?",
+        "correct": 3,
+        "choices": [
+          "Round robin",
+          "Least connections",
+          "URL hashing"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "En una arquitectura de CDNs se utiliza balanceo...",
+        "correct": 1,
+        "choices": [
+          "tanto global como local",
+          "balanceo global basado en DNS",
+          "balanceo local"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "De acuerdo al modo de configuración de un proxy es CIERTO que:",
+        "correct": 2,
+        "choices": [
+          "En el modo NO transparente , el administrador de la red tiene que configurar el router para redigir el tráfico al proxy",
+          "En el modo transparente , el administrador de la red tiene que configurar el router para redigir el tráfico al proxy",
+          "En el modo transparente , el cliente tiene que configurar su navegador con la IP del proxy."
+        ]
+      }
+    ]
+  },
+  "Autoevaluacion-bloqueII-persistencia-2024-2025-questions": {
+    "filename": "OCUXEN_Autoevaluacion-bloqueII-persistencia-2024-2025-questions.xlsx",
+    "category": "Bloque II",
+    "questions": [
+      {
+        "type": "MCQ",
+        "title": "¿Qué tipo de persistencia utilizarías para que un proceso de compra por internet funcionase pero que mejorase el balanceo de carga cuando fuera necesario?",
+        "correct": 3,
+        "choices": [
+          "Persistencia en función de la IP origen",
+          "Persistencia en función de la IP origen, VIP y puerto destino",
+          "Port grouping"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "Para resolver el problema generado por el megaproxy en la persistencia",
+        "correct": 2,
+        "choices": [
+          "Es conveniente usar persistencia basada en IP origen y puerto fuente",
+          "Es necesario usar persistencia a nivel de aplicación.",
+          "Es conveniente usar persistencia basada en IP origen"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "En el balanceo por cookies es FALSO que",
+        "correct": 1,
+        "choices": [
+          "El modo read podría generar fragmentación que tendría que gestionar el SLB",
+          "El modo rewrite evita la fragmentación por parte del SLB",
+          "El modo insert asume que el SLB incluirá un valor a la cookie"
+        ]
+      }
+    ]
+  },
+  "Autoevaluacion-balanceo-carga-global-2024-2025-questions": {
+    "filename": "ONUHOP_Autoevaluacion-balanceo-carga-global-2024-2025-questions.xlsx",
+    "category": "Bloque II",
+    "questions": [
+      {
+        "type": "MCQ",
+        "title": "¿Qué mecanismo de balanceo de carga global GSLB NO implica consultas al DNS del usuario final?",
+        "correct": 3,
+        "choices": [
+          "Basado en DNS",
+          "Basado en HTTP redirect",
+          "Basado en routing"
+        ]
+      }
+    ]
+  },
+  "Autoevaluacion-NFV-2024-2025-questions": {
+    "filename": "XUEEOI_Autoevaluacion-NFV-2024-2025-questions.xlsx",
+    "category": "Bloque II",
+    "questions": [
+      {
+        "type": "MCQ",
+        "title": "¿En qué escenarios crees que tiene sentido NFV?",
+        "correct": 2,
+        "choices": [
+          "En escenarios pequeños es válido",
+          "En escenarios a gran escala para gestionar redes 5G, IoT, el cloud",
+          "En escenarios a media escala para gestionar incluso los equipos de usuario"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "Hay varios principios de diseño en NFV",
+        "correct": 1,
+        "choices": [
+          "Service Chaining, Management and Orchestration, Distributed Architecture",
+          "Service Chaining, Management and Orchestration, VNFs",
+          "Service Chaining, NFV Infrastructure, Distributed Architecture"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "La arquitectura NFV consiste en:",
+        "correct": 3,
+        "choices": [
+          "2 componentes NFV Infrastructure (NFVI) y  VNFs",
+          "3 componentes principales: NFV Infrastructure (NFVI), VNFs, Operational and Business Support Systems",
+          "3 componentes principales: NFV Infrastructure (NFVI), VNFs, NFV Management and Orchestration,"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "En la visión de alto nivel del framework de NFV tenemos los siguientes niveles (de arriba a abajo)",
+        "correct": 2,
+        "choices": [
+          "NFV Infrastructure (NFVI) con  Virtual Computing, Storage y Network Layer, virtualization layer y luego el Hardware",
+          "Virtualized Network Functions (VNFs), NFV Infrastructure (NFVI) (con  Virtual Computing, Storage y Network Layer, el virtualization layer) y luego el Hardware",
+          "Virtualized Network Functions (VNFs), NFV Infrastructure (NFVI) y el virtualization layer"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "Un VNF Forwarding Graph es",
+        "correct": 1,
+        "choices": [
+          "Un grafo que especifica la conectividad entre VNFs (p.ej., firewall, NAT, or load balancer) de camino a un servidor web.",
+          "Un grafo que representa la conectividad entre los diferentes componentes que forman la arquitectura NFV",
+          "Un grafo que representa la conectividad entre los VNFs y los elementos de las Infraestructura NFV (NFVI)"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "En NFV los bloques funcionales que forman la gestión y orquestación de NFV (MANO) son:",
+        "correct": 1,
+        "choices": [
+          "NFV Orchestrator, VNF Manager, Virtualized Infrastructure Manager",
+          "NFV Infrastructure (NFVI), Operational and Business Support Systems (OSS/BSS),",
+          "NFV Orchestrator, VNF Forwarding Graph, VNF Set"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "Indica que NO es considerado VNFs",
+        "correct": 2,
+        "choices": [
+          "IP Security (IPSec)/SSL virtual private network gateways, Firewalls, virus scanners, intrusion detection systems, and spam protection",
+          "Web server, e-mail server, FTP server",
+          "Authentication, Authorization, and Accounting (AAA) servers y Dynamic Host Configuration Protocol (DHCP)"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Por qué crees que se pensó en el despliegue de NFV?",
+        "correct": 3,
+        "choices": [
+          "Para ahorrar costes de gestión",
+          "Para virtualizarlo todo, que es la tendencia ahora",
+          "Para ahorrar costes de gestión y aumentar la capacidad de adaptación a nuevas aplicaciones de red"
+        ]
+      },
+      {
+        "type": "MCQ",
+        "title": "¿Crees que se puede utilizar un controlador SDN en la arquitectura NFV?",
+        "correct": 3,
+        "choices": [
+          "No, son dos aspectos diferentes de gestión para realizar el mismo tipo de operaciones",
+          "Sí, porque el controlador SDN es una VNF",
+          "Sí, para gestionar el enrutamiento , por ejemplo, entre el VNFs o redirigirlo tráfico en el VNF Graph"
+        ]
+      }
+    ]
+  }
+}
